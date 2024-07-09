@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Game Over Sidte" />
+    <meta name="keywords" content="Game Over" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo-sm.png"
+      type="image/x-icon"
+    />
+    <title>Game Over</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script defer src="./js/bootstrap.bundle.min.js"></script>
+    <script defer type="module" src="./js/index.js"></script>
+  </head>
+  <body>
+    <section class="main">
+      <header class="mainHeader">
+        <img
+          src="assets/images/wraper.png"
+          alt="HomePhoto"
+          loading="lazy"
+          class="w-100"
+        />
+      </header>
+      <nav class="navbar navbar-expand-md mt-3 position-sticky top-0">
+        <div class="container rounded-5 py-2 px-4">
+          <a class="navbar-brand logo fs-3">
+            <span
+              ><img
+                src="assets/images/logo-sm.png "
+                class="w-25"
+                alt="logo"
+                loading="lazy"
+            /></span>
+            GAME REVIEWS</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-uppercase" data-category="mmorpg"
+                  >mmorpg</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" data-category="shooter"
+                  >shooter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" data-category="sailing"
+                  >sailing</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" data-category="permadeath"
+                  >permadeath</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" data-category="superhero"
+                  >superhero</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" data-category="pixel"
+                  >pixel</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="home mt-5">
+        <div class="container">
+          <div class="row g-4 rowData"></div>
+        </div>
+      </section>
+      <section class="detail d-none">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center py-2">
+            <h2>Details Game</h2>
+            <p class="fs-3 close">X</p>
+          </div>
+          <div class="row g-4 detailData"></div>
+        </div>
+      </section>
+
+      <div class="loading d-none"><span class="loader"></span></div>
+    </section>
+  </body>
+</html>
