@@ -1,6 +1,7 @@
 import { detailPage } from "./details.js";
 
 const rowData = document.querySelector(".rowData");
+const home = document.querySelector(".home");
 const detail = document.querySelector(".detail");
 const detailData = document.querySelector(".detailData");
 
@@ -51,6 +52,7 @@ class UI {
       el.addEventListener("click", function () {
         const id = el.dataset.id;
         detail.classList.remove("d-none");
+        home.classList.add("d-none");
         detailPage.takeId(id);
       });
     });

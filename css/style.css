@@ -65,10 +65,12 @@ nav .nav-link {
   cursor: pointer;
 }
 .detail {
-  top: 0;
+  overflow-y: scroll;
   position: fixed;
   inset: 0;
   z-index: 99999;
+  width: 100%;
+  min-height: 100vh;
   background-color: #272b30;
 }
 .detail a:hover {
